@@ -1,9 +1,11 @@
-package com.pavan.chess;
+package com.pavan.chess.model;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
+import com.pavan.chess.enums.COlour;
+import com.pavan.chess.enums.PieceType;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

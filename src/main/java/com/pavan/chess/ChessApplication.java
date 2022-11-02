@@ -3,9 +3,12 @@ package com.pavan.chess;
 import com.pavan.chess.controller.MoveController;
 import com.pavan.chess.dto.MoveRequest;
 import com.pavan.chess.dto.MoveResponse;
+import com.pavan.chess.enums.COlour;
+import com.pavan.chess.enums.GameStatus;
+import com.pavan.chess.model.Game;
+import com.pavan.chess.model.Player;
 import com.pavan.chess.services.BoardService;
 import com.pavan.chess.services.PlayerService;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.ArrayList;

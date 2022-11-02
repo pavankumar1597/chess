@@ -1,7 +1,7 @@
 package com.pavan.chess.services;
 
-import com.pavan.chess.Board;
-import com.pavan.chess.Game;
+import com.pavan.chess.model.Board;
+import com.pavan.chess.model.Game;
 import com.pavan.chess.repositories.BoardRepo;
 
 public class BoardService {

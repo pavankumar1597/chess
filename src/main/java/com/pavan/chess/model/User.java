@@ -1,11 +1,10 @@
-package com.pavan.chess;
+package com.pavan.chess.model;
 
-import lombok.AllArgsConstructor;
+import com.pavan.chess.model.BaseModel;
 import lombok.Data;
-import lombok.RequiredArgsConstructor;
 
 @Data
-public class User extends  BaseModel {
+public class User extends BaseModel {
 
     private  String name ;
     private  String email ;

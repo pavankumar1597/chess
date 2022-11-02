@@ -1,10 +1,8 @@
 package com.pavan.chess.services;
 
-import com.pavan.chess.Board;
-import com.pavan.chess.Cell;
-import com.pavan.chess.Piece;
+import com.pavan.chess.model.Board;
+import com.pavan.chess.model.Cell;
 import com.pavan.chess.dto.MoveRequest;
-import lombok.RequiredArgsConstructor;
 
 public class MoveValidator {
 

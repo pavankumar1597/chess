@@ -1,6 +1,6 @@
 package com.pavan.chess.dto;
 
-import com.pavan.chess.Cell;
+import com.pavan.chess.model.Cell;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 

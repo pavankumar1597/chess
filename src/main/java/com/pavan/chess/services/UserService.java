@@ -1,6 +1,6 @@
 package com.pavan.chess.services;
 
-import com.pavan.chess.User;
+import com.pavan.chess.model.User;
 import com.pavan.chess.repositories.UserRepoImpl;
 import com.pavan.chess.repositories.UserRepository;
 

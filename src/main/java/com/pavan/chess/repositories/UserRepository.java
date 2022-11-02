@@ -1,6 +1,6 @@
 package com.pavan.chess.repositories;
 
-import com.pavan.chess.User;
+import com.pavan.chess.model.User;
 
 public abstract class UserRepository {
   public abstract User get(String email);

@@ -1,14 +1,13 @@
 package com.pavan.chess.controller;
 
 
-import com.pavan.chess.Board;
-import com.pavan.chess.Game;
-import com.pavan.chess.GameStatus;
-import com.pavan.chess.Player;
+import com.pavan.chess.model.Board;
+import com.pavan.chess.model.Game;
+import com.pavan.chess.enums.GameStatus;
+import com.pavan.chess.model.Player;
 import com.pavan.chess.dto.MoveRequest;
 import com.pavan.chess.dto.MoveResponse;
 import com.pavan.chess.services.*;
-import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,9 +1,9 @@
 package com.pavan.chess.Database;
 
-import com.pavan.chess.Board;
-import com.pavan.chess.COlour;
-import com.pavan.chess.Piece;
-import com.pavan.chess.PieceType;
+import com.pavan.chess.model.Board;
+import com.pavan.chess.enums.COlour;
+import com.pavan.chess.model.Piece;
+import com.pavan.chess.enums.PieceType;
 
 import java.util.ArrayList;
 import java.util.Arrays;

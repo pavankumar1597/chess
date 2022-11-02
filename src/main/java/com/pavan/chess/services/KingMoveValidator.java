@@ -1,7 +1,7 @@
 package com.pavan.chess.services;
 
-import com.pavan.chess.Board;
-import com.pavan.chess.Cell;
+import com.pavan.chess.model.Board;
+import com.pavan.chess.model.Cell;
 
 public class KingMoveValidator implements PieceMoveValidator{
     @Override
