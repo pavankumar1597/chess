@@ -1,7 +1,7 @@
 package com.pavan.chess.repositories;
 
 import com.pavan.chess.Database.userDb;
-import com.pavan.chess.User;
+import com.pavan.chess.model.User;
 
 import java.util.HashMap;
 

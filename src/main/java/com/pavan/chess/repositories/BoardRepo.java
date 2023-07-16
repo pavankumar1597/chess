@@ -1,6 +1,6 @@
 package com.pavan.chess.repositories;
 
-import com.pavan.chess.Board;
+import com.pavan.chess.model.Board;
 import com.pavan.chess.Database.boardDb;
 
 import java.util.ArrayList;

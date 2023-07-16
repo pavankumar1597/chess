@@ -1,6 +1,6 @@
 package com.pavan.chess.services;
 
-import com.pavan.chess.PieceType;
+import com.pavan.chess.enums.PieceType;
 
 public class MoveValidatorFactory {
 

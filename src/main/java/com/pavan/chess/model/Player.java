@@ -1,8 +1,9 @@
-package com.pavan.chess;
+package com.pavan.chess.model;
 
 
+import com.pavan.chess.enums.COlour;
 
-public class Player extends  BaseModel {
+public class Player extends BaseModel {
     private long id;
     private  User user;
     private COlour color;

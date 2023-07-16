@@ -1,6 +1,7 @@
-package com.pavan.chess;
+package com.pavan.chess.model;
 
 
+import com.pavan.chess.enums.COlour;
 import lombok.Data;
 
 @Data public class Cell extends  BaseModel {

@@ -1,6 +1,6 @@
 package com.pavan.chess.repositories;
 
-import com.pavan.chess.Player;
+import com.pavan.chess.model.Player;
 
 import java.util.HashMap;
 

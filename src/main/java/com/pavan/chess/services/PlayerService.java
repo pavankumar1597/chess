@@ -1,10 +1,9 @@
 package com.pavan.chess.services;
 
-import com.pavan.chess.COlour;
-import com.pavan.chess.Player;
+import com.pavan.chess.enums.COlour;
+import com.pavan.chess.model.Player;
 import com.pavan.chess.repositories.PlayerRepo;
 import com.pavan.chess.repositories.UserRepoImpl;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;

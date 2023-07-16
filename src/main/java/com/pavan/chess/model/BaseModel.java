@@ -1,4 +1,4 @@
-package com.pavan.chess;
+package com.pavan.chess.model;
 
 import java.util.Date;
 
