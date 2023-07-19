@@ -15,8 +15,9 @@ public class PlayerRepo {
 
 
     }
+
     public static PlayerRepo getInstance() {
-        if(instance == null)
+        if (instance == null)
             instance = new PlayerRepo();
         return instance;
     }

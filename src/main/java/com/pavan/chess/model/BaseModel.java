@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class BaseModel {
-    private long id ;
+    private long id;
 
-    Date createDate ;
+    Date createDate;
     Date lastModified;
 
     public BaseModel(long id) {

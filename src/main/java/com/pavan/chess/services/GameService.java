@@ -5,6 +5,6 @@ import com.pavan.chess.model.Player;
 
 public class GameService {
     public Game findGameByPlayer(Player player) {
-    return player.getGame();
+        return player.getGame();
     }
 }

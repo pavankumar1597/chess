@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("move")
 @RequiredArgsConstructor
 public class MoveController {
+
 //asdvafsvadfv
     //asdvcsdcvsdc
     //asdvasfvas
@@ -32,12 +33,11 @@ public class MoveController {
             new MoveValidator();
 
 
-    public  GameService gameService = new GameService();
-
+    public GameService gameService = new GameService();
 
 
     @PostMapping("")
-    public MoveResponse moveIt(MoveRequest moveRequest){
+    public MoveResponse moveIt(MoveRequest moveRequest) {
         Player player = playerService.findPlayerById(moveRequest.getPlayerId());
         Game game = gameService.findGameByPlayer(player);
         Board board = boardService.findBoardById(game);
@@ -46,7 +46,7 @@ public class MoveController {
             // doesn't include attacks to opponent players
             // only move feature implemented, same player keeps moving for now
             String message = player.getColor() + " moves " + moveRequest.getStartCell().toString() + " to " + moveRequest.getEndCell().toString();
-             board = board.movePiece(moveRequest.getStartCell(), moveRequest.getEndCell());
+            board = board.movePiece(moveRequest.getStartCell(), moveRequest.getEndCell());
             System.out.println("\n\n");
             System.out.println("new board : ");
             board.printBoard();

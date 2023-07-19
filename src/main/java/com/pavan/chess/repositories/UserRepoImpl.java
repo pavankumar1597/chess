@@ -5,9 +5,9 @@ import com.pavan.chess.model.User;
 
 import java.util.HashMap;
 
-public class UserRepoImpl extends UserRepository{
+public class UserRepoImpl extends UserRepository {
 
-    private HashMap<String,User> userdb;
+    private HashMap<String, User> userdb;
     private static Boolean shouldSendOne = false;
 
 
@@ -26,7 +26,7 @@ public class UserRepoImpl extends UserRepository{
     public User getRandomUser() {
 
         shouldSendOne = !shouldSendOne;
-        if(shouldSendOne) {
+        if (shouldSendOne) {
             return userdb.get("user.one@email.in");
         }
         return userdb.get("user.two@email.in");

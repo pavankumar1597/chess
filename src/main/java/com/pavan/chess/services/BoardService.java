@@ -10,10 +10,10 @@ public class BoardService {
     public BoardService() {
         this.boardRepository = new BoardRepo();
     }
+
     public Board findBoardById(Game game) {
         return game.getBoard();
     }
-
 
 
     public Board setNewBoard(int size) {

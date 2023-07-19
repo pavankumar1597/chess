@@ -8,8 +8,8 @@ import lombok.RequiredArgsConstructor;
 @Getter
 public class MoveRequest {
 
-    private final long playerId ;
-    private final Cell startCell ;
-    private final Cell endCell ;
+    private final long playerId;
+    private final Cell startCell;
+    private final Cell endCell;
 
 }

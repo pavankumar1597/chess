@@ -5,7 +5,7 @@ import com.pavan.chess.enums.COlour;
 
 public class Player extends BaseModel {
     private long id;
-    private  User user;
+    private User user;
     private COlour color;
     private Game game;
 

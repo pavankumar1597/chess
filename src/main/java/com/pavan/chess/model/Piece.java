@@ -12,5 +12,4 @@ public class Piece {
     private PieceType pieceType;
 
 
-
 }

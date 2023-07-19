@@ -15,6 +15,6 @@ public class MoveValidator {
         Cell cellsStart = boardById.getCells(moveRequest.getStartCell());
         Cell cellEnd = boardById.getCells(moveRequest.getEndCell());
         PieceMoveValidator validator = moveValidatorFactory.getValidator(cellsStart.getPawn().getPieceType());
-        return   validator.validateMove(boardById,cellsStart,cellEnd) ;
+        return validator.validateMove(boardById, cellsStart, cellEnd);
     }
 }

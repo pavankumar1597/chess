@@ -11,9 +11,9 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-public class Board extends  BaseModel{
+public class Board extends BaseModel {
 
-    long size ;
+    long size;
     private List<List<Cell>> board;
 
 
@@ -23,12 +23,12 @@ public class Board extends  BaseModel{
         this.size = size;
         List<List<Cell>> emptyBoard = new ArrayList<>();
         System.out.println("njhgfccjhb");
-        for(long cellX = 0; cellX < size; cellX++) {
+        for (long cellX = 0; cellX < size; cellX++) {
             List<Cell> emptyRow = new ArrayList<>();
-            for(long cellY = 0; cellY < size; cellY++) {
+            for (long cellY = 0; cellY < size; cellY++) {
                 System.out.println("njhgfccjhb");
 
-                COlour cellColour = cellY*cellX % 2 == 0 ? COlour.BLACK : COlour.WHITE;
+                COlour cellColour = cellY * cellX % 2 == 0 ? COlour.BLACK : COlour.WHITE;
                 emptyRow.add(new Cell(cellColour, new Piece(COlour.UNKNOWN, PieceType.UNKNOWN), cellX, cellY));
             }
             emptyBoard.add(emptyRow);
@@ -49,12 +49,12 @@ public class Board extends  BaseModel{
     }
 
     public void setCell(int x, int y, Piece piece) {
-    board.get(x).get(y).setPawn(piece);
+        board.get(x).get(y).setPawn(piece);
     }
 
     public void printBoard() {
-        for(int cellY = (int)size-1; cellY >= 0; cellY--) {
-            for(int cellX = 0; cellX < size; cellX++) {
+        for (int cellY = (int) size - 1; cellY >= 0; cellY--) {
+            for (int cellX = 0; cellX < size; cellX++) {
                 Cell currentCell = this.getCell(cellX, cellY);
                 System.out.print(String.format("%-20s", currentCell.toString()));
             }
@@ -67,7 +67,6 @@ public class Board extends  BaseModel{
         startCell.setPawn(new Piece(COlour.UNKNOWN, PieceType.UNKNOWN));
         endCell.setPawn(piece);
         return this;
-
 
 
     }

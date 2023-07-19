@@ -4,9 +4,10 @@ package com.pavan.chess.model;
 import com.pavan.chess.enums.COlour;
 import lombok.Data;
 
-@Data public class Cell extends  BaseModel {
-    private COlour colour ;
-    private Piece pawn ;
+@Data
+public class Cell extends BaseModel {
+    private COlour colour;
+    private Piece pawn;
     private long cellX;
     private long cellY;
 
