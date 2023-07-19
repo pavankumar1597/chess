@@ -18,40 +18,57 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class MoveController {
 
-//asdvafsvadfv
-    //asdvcsdcvsdc
-    //asdvasfvas
-    //asfsfasrfera
-    //adfvadfverv
-    //asfvadfvdsbvdf
-    //sdfvsdvsdfvsdf
-    //sdfvsdfvsdfvsdfv
 
+
+    
     PlayerService playerService = new PlayerService();
     BoardService boardService = new BoardService();
     MoveValidator moveValidator =
             new MoveValidator();
 
 
-    public GameService gameService = new GameService();
 
+    
+
+    public  GameService gameService = new GameService();
+
+
+
+
+
+    
 
     @PostMapping("")
-    public MoveResponse moveIt(MoveRequest moveRequest) {
+    public MoveResponse moveIt(MoveRequest moveRequest){
+
+
+        
         Player player = playerService.findPlayerById(moveRequest.getPlayerId());
         Game game = gameService.findGameByPlayer(player);
+
+
+        
         Board board = boardService.findBoardById(game);
         boolean b = moveValidator.moveValidator(board, moveRequest);
         if (b) {
             // doesn't include attacks to opponent players
+
+
+            
             // only move feature implemented, same player keeps moving for now
             String message = player.getColor() + " moves " + moveRequest.getStartCell().toString() + " to " + moveRequest.getEndCell().toString();
-            board = board.movePiece(moveRequest.getStartCell(), moveRequest.getEndCell());
+             board = board.movePiece(moveRequest.getStartCell(), moveRequest.getEndCell());
             System.out.println("\n\n");
             System.out.println("new board : ");
             board.printBoard();
+
+            
             return new MoveResponse(message, board, GameStatus.ACTIVE, player);
         }
+
+
+
+        
 
         System.out.println("\n\n");
         System.out.println("new board : \n");
